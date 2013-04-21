@@ -16,7 +16,7 @@ public class AccountApp {
 	
 	public Dao<Account, String> connect() throws SQLException{
 		String databaseUrl = "jdbc:h2:baza";
-	        connectionSource = new JdbcConnectionSource(databaseUrl,"sa", "");
+		connectionSource = new JdbcConnectionSource(databaseUrl,"sa", "");
 		Dao<Account, String> accDao = DaoManager.createDao(connectionSource, Account.class);
 		return accDao;
 	}
