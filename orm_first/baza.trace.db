@@ -1,0 +1,8 @@
+04-17 18:29:15 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "DROP TABLE IF ACCOUNTS"; ожидалось "EXISTS"
+Syntax error in SQL statement "DROP TABLE IF ACCOUNTS"; expected "EXISTS"; SQL statement:
+DROP TABLE IF ACCOUNTS [42001-171]
+04-17 18:39:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "ACCOUNTS" не найдена
+Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO `accounts` (`text` ,`prioritet` ) VALUES (?,?) [42102-171]
